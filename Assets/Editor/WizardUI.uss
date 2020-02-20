@@ -1,0 +1,21 @@
+.Preview {
+    width: 40%;
+    height: 40%;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    background-color: rgb(143, 143, 143);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(127, 127, 127);
+    border-right-color: rgb(127, 127, 127);
+    border-top-color: rgb(127, 127, 127);
+    border-bottom-color: rgb(127, 127, 127);
+}

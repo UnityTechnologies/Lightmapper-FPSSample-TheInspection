@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Holder" style="width: 100%; height: 100%; border-left-color: rgb(47, 46, 46); border-right-color: rgb(47, 46, 46); border-top-color: rgb(47, 46, 46); border-bottom-color: rgb(47, 46, 46); flex-direction: row;">
+        <Style src="WizardUI.uss" />
+        <ui:VisualElement name="PreviewHolder" class="Preview" />
+        <ui:VisualElement name="Properties" style="width: 40%; height: 40%; margin-left: 3%; margin-right: 3%; margin-top: 3%; margin-bottom: 3%; justify-content: center;">
+            <ui:Label text="Label" name="SelectedObjectName" binding-path="m_Name" />
+            <uie:ObjectField label="Object To Instanciate" name="InstanciatedObjectSnippet" />
+            <ui:Button text="Intanciate" name="InstanciateButton" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
