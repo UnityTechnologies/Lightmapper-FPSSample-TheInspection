@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1340478180}
-  m_IndirectSpecularColor: {r: 0.65127605, g: 0.66595215, b: 0.649073, a: 1}
+  m_IndirectSpecularColor: {r: 0.30197835, g: 0.3207436, b: 0.30576795, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -85,8 +85,8 @@ LightmapSettings:
     m_PVRDenoiserTypeIndirect: 2
     m_PVRDenoiserTypeAO: 2
     m_PVRFilterTypeDirect: 0
-    m_PVRFilterTypeIndirect: 1
-    m_PVRFilterTypeAO: 1
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVREnvironmentMIS: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
@@ -97,7 +97,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1.748
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
-    m_LightProbeSampleCountMultiplier: 4
+    m_LightProbeSampleCountMultiplier: 8
   m_LightingDataAsset: {fileID: 112000000, guid: 08f4995c5981e49af97b1ac7e0f0b787,
     type: 2}
   m_UseShadowmask: 0
@@ -2085,7 +2085,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415908675}
-  m_LocalRotation: {x: 0.37386292, y: -0.10682807, z: 0.043398406, w: 0.9202885}
+  m_LocalRotation: {x: 0.3738629, y: -0.10682802, z: 0.04339838, w: 0.9202885}
   m_LocalPosition: {x: -3.5282564, y: 4.891249, z: 6.615307}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2138,7 +2138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a95a228be8d88456d986e6202bc6ff75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeVCam: {fileID: 570220300}
+  activeVCam: {fileID: 1679327974}
 --- !u!1 &419471652
 GameObject:
   m_ObjectHideFlags: 0
@@ -4296,7 +4296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 883176321}
-  m_PathPosition: 0
+  m_PathPosition: 1.028656
   m_PositionUnits: 0
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 17.35
@@ -7307,7 +7307,7 @@ Light:
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 3.38
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -7340,7 +7340,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1e-45, y: 1.39e-43, z: 0, w: 19514576}
+  m_BoundingSphereOverride: {x: 0, y: 2.5e-44, z: 1.024e-41, w: 1.04e-43}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -8465,7 +8465,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679327972}
-  m_LocalRotation: {x: 0.37386292, y: -0.10682807, z: 0.043398406, w: 0.9202885}
+  m_LocalRotation: {x: 0.3738629, y: -0.10682802, z: 0.04339838, w: 0.9202885}
   m_LocalPosition: {x: 0.3117435, y: 4.2348495, z: -9.584694}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -11495,6 +11495,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Terraformer_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 802540822204181465, guid: 1cda3bdfc4dfe4335acea59d90b5667b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 802540822204181467, guid: 1cda3bdfc4dfe4335acea59d90b5667b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 802540822204348111, guid: 1cda3bdfc4dfe4335acea59d90b5667b,
         type: 3}
