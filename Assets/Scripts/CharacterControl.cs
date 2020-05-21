@@ -7,11 +7,12 @@ public class CharacterControl : MonoBehaviour
 {
 	public float speedMultiplier = 3f;
 
+	private Vector3 _inputVector;
 	private float _currentSpeed;
 	private Animator _animator;
 	private Transform _transform;
 	private Rigidbody _rigidbody;
-	private Vector3 verticalOffset = new Vector3(0f, -.07f, 0f);
+	private Vector3 verticalOffset = new Vector3(0f, 0f, 0f);
 
 	void Awake()
     {
@@ -24,7 +25,12 @@ public class CharacterControl : MonoBehaviour
 	{
 		float _hor = Input.GetAxis("Horizontal");
 		float _ver = Input.GetAxis("Vertical");
-		Vector3 _inputVector = (new Vector3(_hor, 0f, _ver));
+		_inputVector = (new Vector3(_hor, 0f, _ver));
+
+	}
+
+	private void FixedUpdate()
+	{
 		if(_inputVector.sqrMagnitude > 1f)
 		{
 			_inputVector.Normalize();
